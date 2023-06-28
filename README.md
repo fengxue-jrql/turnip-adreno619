@@ -1,4 +1,19 @@
 # TurnipAdreno619
+性能测试视频
+【adreno619 turnip zink 平衡球(50fps左右)-哔哩哔哩】 https://b23.tv/D4DEQJw
+【turnip zink glmark fps及cpu占用（cpu占用20%）-哔哩哔哩】 https://b23.tv/l2ijEo9
+【box86 box64 wine turnip zink 茶壶帧率-哔哩哔哩】 https://b23.tv/6tb7FHF
+新版文件下载
+微云文件分享:Turnip-Adreno619.tar.bz2下载地址:https://share.weiyun.com/6gd4rCHW文件大小:394.9M
+安装
+sudo tar -jxvf Turnip-Adreno619.tar.bz2
+wine下tz渲染出错可以强制软件渲染
+export LIBGL_ALWAYS_SOFTWARE=true
+GALLIUM_DRIVER=llvmpipe
+export GALLIUM_HUD=fps,cpu,frametime
+export LP_NUM_THREADS=30
+MESA_VK_WSI_DEBUG=sw MESA_LOADER_DRIVER_OVERRIDE=zink box64 wine64 taskmgr​
+
 
 #### 介绍
 我自己编译的Turnip Adreno (TM) 619,arm64 linux box64 box86 wine可用。
